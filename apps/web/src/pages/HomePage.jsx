@@ -14,6 +14,10 @@ import ContactForm from '@/components/ContactForm.jsx';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { motion } from 'framer-motion';
 import { projectsData } from '@/data/projectsData.js';
+import { MdOutlineMail } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa6";
+
+
 
 function HomePage() {
   const heroAnimation = useScrollAnimation(0.1);
@@ -59,19 +63,19 @@ function HomePage() {
 
   const experiences = [
     {
-      date: '2019 – 2020',
+      date: '2022 – Present',
       title: 'Web Developer & Instructor',
       company: 'Times IT',
       description: 'Engineered custom WordPress themes and plugins. Instructed advanced web development cohorts, graduating over 200 students into the tech industry.'
     },
     {
-      date: '2020 – Present',
+      date: '2025 – Present',
       title: 'Senior Full Stack Developer',
       company: 'CmsTechy',
       description: 'Lead development of enterprise applications using the MERN stack. Architect scalable infrastructure supporting 50,000+ daily active users while mentoring engineering teams.'
     },
     {
-      date: '2018 – 2019',
+      date: '2022 – 2023',
       title: 'Figma to WordPress Developer',
       company: 'Flowdigital.my',
       description: 'Translated complex design requirements into pixel-perfect, responsive interfaces using modern CSS frameworks and JavaScript.'
@@ -79,12 +83,12 @@ function HomePage() {
   ];
 
   const skillCategories = [
-    { title: 'Frontend', skills: ['React', 'Next.js', 'Tailwind CSS', 'TypeScript'] },
+    { title: 'Frontend', skills: ['React', 'Next.js', 'Tailwind CSS', 'JavaScript'] },
     { title: 'Backend', skills: ['Node.js', 'Express', 'REST APIs', 'GraphQL'] },
-    { title: 'Database', skills: ['MongoDB', 'PostgreSQL', 'Redis'] },
+    { title: 'Database', skills: ['MongoDB', 'PostgreSQL', 'Redis', 'Firebase' , 'supabase'] },
     { title: 'Architecture', skills: ['System Design', 'Microservices', 'AWS', 'Docker'] },
-    { title: 'CMS', skills: ['WordPress', 'Wix', 'Shopify'] },
-    { title: 'Basic UI Design', skills: ['Figma', 'Canva', 'Sketch'] }
+    { title: 'CMS', skills: ['WordPress', 'Wix', 'Shopify','webflow'] },
+    { title: 'AI Implementation', skills: ['ChatGPT', 'Claude', 'Hostinger Horizon', 'Bolt', 'Cursor', 'Visily.ai'] }
   ];
 
   const expertiseHighlights = [
@@ -487,13 +491,26 @@ function HomePage() {
                 </p>
 
                 <div className="space-y-6">
-                  <a href="mailto:contact@jsjosim.dev" className="flex items-center gap-4 group">
+                  <a href="mailto:josimuddin105464@gmail.com" className="flex items-center gap-4 group">
                     <div className="w-12 h-12 rounded-full bg-background border border-border flex items-center justify-center group-hover:border-primary group-hover:text-primary transition-colors">
-                      <CheckCircle2 className="h-5 w-5" />
+                      <MdOutlineMail className='h-5 w-5' />
+
                     </div>
                     <div>
                       <p className="text-sm font-semibold text-muted-foreground">Email me at</p>
-                      <p className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">contact@jsjosim.dev</p>
+                      <p className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">josimuddin105464@gmail.com</p>
+                    </div>
+                  </a>
+
+                  <a href="tel:+8801797805453" className="flex items-center gap-4 group">
+                    <div className="w-12 h-12 rounded-full bg-background border border-border flex items-center justify-center group-hover:border-primary group-hover:text-primary transition-colors">
+                      <FaWhatsapp className='h-5 w-5' />
+
+                      
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold text-muted-foreground">Call me at</p>
+                      <p className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">+8801797805453</p>
                     </div>
                   </a>
                   

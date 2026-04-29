@@ -13,9 +13,9 @@ function Footer() {
   ];
 
   const socialLinks = [
-    { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com' },
-    { name: 'GitHub', icon: Github, href: 'https://github.com' },
-    { name: 'Twitter', icon: Twitter, href: 'https://twitter.com' }
+    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/in/webaray/' },
+    { name: 'GitHub', icon: Github, href: 'https://github.com/webaray' },
+    { name: 'Twitter', icon: Twitter, href: 'https://twitter.com/webaray' }
   ];
 
   const scrollToSection = (href) => {
@@ -44,11 +44,11 @@ function Footer() {
               Crafting high-performance, scalable web applications that drive real business results and exceptional user experiences.
             </p>
             <a 
-              href="mailto:contact@jsjosim.dev" 
+              href="mailto:josimuddin105464@gmail.com" 
               className="inline-flex items-center gap-2 text-foreground font-semibold hover:text-primary transition-colors"
             >
               <Mail className="h-5 w-5" />
-              contact@jsjosim.dev
+              josimuddin105464@gmail.com
             </a>
           </div>
 
